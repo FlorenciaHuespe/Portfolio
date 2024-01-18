@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Florencia</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/florencia.jpg" alt="" />
+        </div>
+        <h1>FLORENCIA HUESPE</h1>
+        <h2>Full Stack Developer</h2>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/florencia-huespe-6587441b5/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/FlorenciaHuespe" target="_blank"
+            ><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/HuespeFlorencia" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola soy Florencia Huespe, </span>soy Desarrolladora Web 👩🏻‍💻 con
+          formación en Full Stack Developer. Anteriormente, desempeñé el rol de
+          Asistente en el ámbito administrativo, brindando soporte y
+          acompañamiento a los clientes. Sin embargo, siempre he sentido una
+          gran curiosidad por la programación, lo que me impulsó a aventurarme
+          en el mundo IT. Me apasiona el aprendizaje continuo y la mejora
+          constante de mis habilidades, ya que, en este campo, la evolución es
+          una necesidad constante.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li><strong>Nombre:</strong> María Florencia Huespe</li>
+              <li><strong>Teléfono:</strong> (+54) 9 3516575218</li>
+              <li><strong>Email:</strong> florenciahuespe1986@gmail.com</li>
+              <!-- <li><strong>Website:</strong> www.example.com</li> -->
+              <li><strong>Dirección:</strong> Córdoba, Argentina</li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MÚSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-laptop"></i>
+                <span>TECNOLOGÍA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobremi">
+          <a href="https://drive.google.com/file/d/1W8a50gLRHZlFruAWqLxjO_kN7Yq9L5IX/preview" target="_blank">
+            <button>
+              Descargar CV<i class="fa-solid fa-download"></i>
+              <span class="overlay"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <!-- <span>Javascript</span> -->
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="javascript"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>HTML & CSS</span> -->
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="html5"
+                width="60"
+                height="60"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                alt="css3"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>React</span> -->
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                alt="react"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Redux</span> -->
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                alt="redux"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Bootstrap</span> -->
+              <img
+                src="https://bootstrap21.org/docs/5.2/assets/brand/bootstrap-logo-shadow.png"
+                alt="bootstrap"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Ant Design</span> -->
+              <img
+                src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+                alt="bootstrap"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Node</span> -->
+              <img
+                src="https://nodejs.org/static/images/logo.svg"
+                alt="nodejs"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Express</span> -->
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                alt="express"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>PostgreSQL</span> -->
+              <img
+                src="https://www.postgresql.org/media/img/about/press/elephant.png"
+                alt="postgresql"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div> -->
+            <!-- </div>
+            <div class="skill"> -->
+              <!-- <span>Sequelize</span> -->
+              <img
+                src="https://sequelize.org/img/logo.svg"
+                alt="sequelize"
+                width="60"
+                height="60"
+              />
+              <!-- <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- Professional Skill -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Aprendizaje continuo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proactiva</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>79%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Organizada</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Responsable</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Full Stack Developer</h4>
+              <span class="casa">Henry - Bootcamp</span>
+              <span class="fecha">2023 - 2023</span>
+              <!-- <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+                sapiente, dolores itaque quasi soluta alias quaerat, reiciendis
+                reprehenderit recusandae tempora laudantium sint ipsa quia ullam
+                ducimus corrupti consectetur? Consequatur, maxime.
+              </p> -->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Asistente Ejecutivo Gerencial</h4>
+              <span class="casa">CEICOS</span>
+              <span class="fecha">2010 - 2010</span>
+              <!-- <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+                sapiente, dolores itaque quasi soluta alias quaerat, reiciendis
+                reprehenderit recusandae tempora laudantium sint ipsa quia ullam
+                ducimus corrupti consectetur? Consequatur, maxime.
+              </p> -->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Licenciatura en Cs de la Comunicación</h4>
+              <span class="casa">Universidad Nacional de Córdoba</span>
+              <span class="fecha">2005 - 2008</span>
+              <!-- <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+                sapiente, dolores itaque quasi soluta alias quaerat, reiciendis
+                reprehenderit recusandae tempora laudantium sint ipsa quia ullam
+                ducimus corrupti consectetur? Consequatur, maxime.
+              </p> -->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Atención al Cliente - Dueño</h4>
+              <span class="casa">The Animal House</span>
+              <span class="fecha">Nov 2020 - Nov 2023</span>
+              <p>
+                Comercialización de productos que abarca desde alimentos hasta
+                juguetes y accesorios para mascotas. Gestión de inventario,
+                procesamiento de pedidos, relaciones con proveedores,
+                administración de transacciones de caja, ventas por teléfono y
+                coordinación de estrategias en redes sociales
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Teaching Assistant</h4>
+              <span class="casa">Henry</span>
+              <span class="fecha">Jul 2023 - Oct 2023</span>
+              <p>
+                Coordinación de un grupo de estudiantes para lograr la
+                integración al equipo de estudio. Asistencia y acompañamiento a
+                la resolución de ejercicios y promover la colaboración grupal.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Ejecutivo de Atención al Cliente - Administración</h4>
+              <span class="casa">Vanesa Duran</span>
+              <span class="fecha">Jun 2017 - Oct 2021</span>
+              <p>
+                Apoyo administrativo gerencial, supervisión del proceso de
+                cierre de pedidos, control y corrección de catálogos,
+                asesoramiento continuo. Responsable de enviar informes semanales
+                de ventas y actualizaciones de productos, realizar análisis para
+                abordar eficazmente las necesidades de los clientes y mantener
+                una comunicación efectiva.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/MyDog.jpg" alt="" />
+            <div class="overlay">
+              <h3>MY DOG</h3>
+              <p>
+                Single Page Application
+                <!-- Este proyecto se enfoca en proporcionar información
+                detallada sobre una amplia variedad de razas de perros. Dentro de
+                la aplicación, encontrarán una Landing Page que redirige a la
+                página de inicio. En la Home, podrán explorar todas las razas
+                disponibles, tanto las obtenidas a través de una API como las
+                creadas mediante un formulario interactivo, lo cual se almacenan
+                en la base de datos. Además, la página cuenta con
+                funcionalidades de paginación, búsqueda por nombre, filtros que
+                permiten buscar razas por temperamento y opciones de
+                ordenamiento, que pueden combinarse para una experiencia
+                personalizada. Cada tarjeta de raza redirige a una página
+                detallada que muestra información completa sobre la raza en
+                cuestión. -->
+              </p>
+              <a href="https://github.com/FlorenciaHuespe/PI-Dogs" target="_blank"
+              ><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/Patitas Felices.png" alt="" />
+            <div class="overlay">
+              <h3>PATITAS FELICES</h3>
+              <p>
+                E-commerce Design
+                <!-- Desarrollamos un sitio web (e-commerce), llamado "PATITAS
+                FELICES". La plataforma ofrece una amplia gama de productos,
+                desde alimentos hasta juguetes y accesorios para mascotas.
+                Además, implementamos un servicio de pagos en línea a través de
+                Mercado Pago. -->
+              </p>
+              <a href="https://github.com/y-Nyu/Proyecto-Final-Front/tree/main/client" target="_blank"
+              ><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form id="miFormulario" action="https://formsubmit.co/florenciahuespe1986@gmail.com" method="POST">
+              <input type="text" name="name" id="name" placeholder="Nombre" required>
+              <input type="tel" name="phone" id="phone" placeholder="Número de teléfono" required>
+              <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+              <button>
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+              <input type="hidden" name="_autoresponse" value="Hemos recibido su mensaje y nos pondremos en contacto con usted lo antes posible.">
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var formulario = document.getElementById('miFormulario');
+          formulario.addEventListener('submit', function (event) {
+            event.preventDefault();
+      
+            // Aquí puedes agregar código para limpiar los campos del formulario si lo deseas
+            formulario.reset();
+      
+            // Aquí puedes agregar código para redirigir a otra página si lo deseas
+            // window.location.href = 'tu_pagina_de_destino.html';
+      
+            // O, si prefieres recargar la misma página después de enviar el formulario
+            setTimeout(function () {
+              location.reload();
+            }, 1000);
+          });
+        });
+      </script>
+    </section>
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/florencia-huespe-6587441b5/"
+        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/FlorenciaHuespe" target="_blank"
+        ><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/HuespeFlorencia" target="_blank"
+      ><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
